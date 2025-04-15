@@ -1,0 +1,44 @@
+.App {
+  text-align: center;
+  padding: 20px;
+}
+section {
+  margin: 20px 0;
+}
+button {
+  margin: 5px;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #45a049;
+}
+.output-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 2px solid #4CAF50;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.output-container pre {
+  text-align: left;
+  white-space: pre-wrap;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+textarea {
+  width: 100%;
+  max-width: 800px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #4CAF50;
+  border-radius: 5px;
+  resize: vertical;
+}
