@@ -9,9 +9,9 @@ function App() {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ sermonText: 'Sample sermon', styleName: 'Style1' }),
     })
-      .then((res) => res.json())
-      .then((data) => setSermons([data]))
-      .catch((error) => console.error('Error fetching sermons:', error));
+      .then(res => res.json())
+      .then(data => setSermons([data]))
+      .catch(error => console.error('Error fetching sermons:', error));
   }, []);
 
   return (
@@ -25,7 +25,7 @@ function App() {
             <h2 className="text-xl font-bold">Sermon List</h2>
             <ul>
               {sermons.map((sermon, index) => (
-                <li key={index}>{sermon.convertedText || 'No data'}</li>
+                <li key={index}>{sermon.converted || 'No data'}</li>
               ))}
             </ul>
           </div>
